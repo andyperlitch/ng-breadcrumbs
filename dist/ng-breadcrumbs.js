@@ -62,7 +62,7 @@ angular
             var label = routes[route.path].label || route.param;
             var name = routes[route.path].name || '';
             self.breadcrumbs.push({
-                label: label, path: path, name: name, param: route.param
+                label: label, path: path, name: name, param: route.param, route: route
             });
           }
         });
